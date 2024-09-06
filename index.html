@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Ping coming soon page</title>
+    <link rel="stylesheet" href="./src/output.css" />
+
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body class="">
+    <div
+      class="py-20 px-5 pc:px-24 monitor:px-36 flex flex-col justify-center items-center"
+    >
+      <img class="mb-8" src="./images/logo.svg" alt="" />
+
+      <p class="text-Gray text-2xl mb-3">
+        We are launching <span class="font-bold text-VeryDarkBlue">soon!</span>
+      </p>
+      <p class="mb-3">Subscribe and get notified</p>
+      <div
+        class="mb-16 w-[100%] flex items-center flex-col gap-3 tablet:flex-row mt-3"
+      >
+        <div class="w-[100%] tablet:w-[70%]">
+          <input
+            id="mailinputbox"
+            type="mail"
+            class="w-[100%] border border-PaleBlue rounded-full py-2 px-5"
+            placeholder="Your email address..."
+          />
+          <p
+            id="errormsg"
+            class="hidden text-LightRed italic tablet:text-left tablet:ml-5 text-center text-sm mt-1"
+          >
+            Please provide a valid email address
+          </p>
+          <p
+            id="emptymsg"
+            class="hidden text-LightRed italic tablet:text-left tablet:ml-5 text-center text-sm mt-1"
+          >
+            Whoops! It looks like you forgot to add your email
+          </p>
+        </div>
+        <button
+          onclick="check()"
+          class="hover:bg-PaleBlue w-[100%] tablet:self-start tablet:w-[30%] bg-Blue text-white rounded-full py-2 px-5 font-semibold"
+        >
+          Notify Me
+        </button>
+      </div>
+      <img
+        src="./images/illustration-dashboard.png"
+        class="tablet:w-[90%]"
+        alt=""
+      />
+      <div class="flex mt-11 mb-7 gap-3">
+        <div class="group relative">
+          <img
+            src="./images/icons8-facebook-25.png"
+            class="group-hover:opacity-0"
+            alt=""
+          />
+          <img
+            class="absolute top-0 left-0 group-hover:opacity-100 opacity-0"
+            src="./images/icons8-facebook-25 (1).png"
+            alt=""
+          />
+        </div>
+        <div class="group relative grid h-full mt-1">
+          <img
+            src="./images/icons8-twitter-18.png"
+            class="group-hover:opacity-0 self-center h-full w-full"
+            alt=""
+          />
+          <img
+            class="absolute top-0 left-0 group-hover:opacity-100 opacity-0"
+            src="./images/icons8-twitter-circled-25.png"
+            alt=""
+          />
+        </div>
+        <div class="group relative">
+          <img
+            src="./images/icons8-instagram-25.png"
+            class="group-hover:opacity-0"
+            alt=""
+          />
+          <img
+            class="absolute top-0 left-0 group-hover:opacity-100 opacity-0"
+            src="./images/icons8-instagram-25f.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <p class="text-Gray text-[12px]">
+        &copy; Copyright Ping. All rights reserved.
+      </p>
+    </div>
+
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a
+          href="https://www.frontendmentor.io/profile/thinakaran123"
+          target="_blank"
+          >Thinakaran</a
+        >.
+      </p>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
